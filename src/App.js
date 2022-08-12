@@ -1,13 +1,17 @@
 import './App.css';
+import BannerSlider from './components/slider/BannerSlider';
+
 import Navbar from './shared/Navbar';
 
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="mx-auto">
     <Navbar></Navbar>
-     {/* <h1 className='text-4xl text-red-600'>Hi Motion view </h1> */}
+    <BannerSlider></BannerSlider>
+   
+    
      
     
     </div>

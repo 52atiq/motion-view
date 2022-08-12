@@ -39,7 +39,7 @@ const Navbar = () => {
 
       {/* center navigation bar  */}
 
-      <div className="flex font-medium justify-center">
+      <div className="flex font-medium justify-center  z-50">
         {/* For mobile topBar  */}
         <div className="z-50 p-5 md:w-auto w-full flex  justify-between">
           <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
