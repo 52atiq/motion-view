@@ -1,7 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const Product = ({product}) => {
-    const {  name,image, regular_price,sale_price,stock} = product;
+const Product = ({product,handleAddToCart}) => {
+    const { id, name,image, regular_price,sale_price,stock} = product;
+
+    const navigate= useNavigate();
+    const navigateToPurchaseProduct =  id =>{
+        navigate(`/purchase/${id}`)
+    }
 
     return (
         <div className='bg-white mb-10 m-2 grid w-50 rounded'>
@@ -19,7 +25,7 @@ const Product = ({product}) => {
 
            <div className='flex justify-center gap-4 mb-2 mr-2 text-yellow-500 text-xl cursor-pointer  '>
            <p className=''>{stock>0 ? <ion-icon name="heart-outline"></ion-icon> : ''}</p>
-            <p > {stock>0 ?<span className=''><ion-icon  name="cart-outline"></ion-icon> </span>:<span className='text-sm text-red-600 '>Stock Out</span> } </p>
+            <p > {stock>0 ?<span className=''><ion-icon onClick={() => navigateToPurchaseProduct(id)}  name="cart-outline"></ion-icon> </span>:<span className='text-sm text-red-600 '>Stock Out</span> } </p>
            </div>
 
             </div>

@@ -32,14 +32,15 @@ const Navbar = () => {
         </div>
         
         <div className="md:mr-44">
-          <h1 className="text-2xl  text-sky-300">Motion View</h1>
+          {/* <h1 className="text-2xl  text-sky-300">Motion View</h1> */}
+          <Link to='/' className="text-3xl text-sky-500 font-light"> Motion View</Link>
         </div>
 
         <div className="flex gap-3 text-2xl cursor-pointer">
           
           {/* <div> */}
             {/* <ion-icon name="person-outline"> */}
-            <div className='text-black mt-3 text-xl'>{user ? <p className="" onClick={logout} >SignUp </p> : <Link to="/login" > SignIn </Link>}</div>
+            <div className='text-black mt-3 text-xl'>{user ? <p className="" onClick={logout} >Sign Out </p> : <Link to="/login" > SignIn </Link>}</div>
             {/* </ion-icon> */}
           {/* </div> */}
 
