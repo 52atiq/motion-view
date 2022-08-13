@@ -1,8 +1,8 @@
 import React from "react";
-import sliderOne from "../../assets/images/slider-one.png";
-import sliderTwo from "../../assets/images/slider-two.png";
-import sliderThree from "../../assets/images/slider-three.png";
-import sliderFour from "../../assets/images/slider-four.png";
+import sliderOne from "../../assets/images/slide1.png";
+import sliderTwo from "../../assets/images/slide2.png";
+import sliderThree from "../../assets/images/slide3.png";
+import sliderFour from "../../assets/images/slide4.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -73,7 +73,6 @@ const BannerSlider = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
-         
         },
       },
       {
@@ -81,7 +80,6 @@ const BannerSlider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-         
         },
       },
     ],
@@ -95,15 +93,12 @@ const BannerSlider = () => {
             <div className="card w-full ">
               <div className="card-top">
                 <img
-                  className="w-full h-[750px] "
+                  className="w-full h-[550px] "
                   src={item.image}
                   alt={item.title}
                 />
               </div>
-              {/* <div className='card-bottom'> 
-                           <h3>{item.price}</h3>
-                           <p>{item.category}</p>
-                        </div>  */}
+             
             </div>
           ))}
         </Slider>

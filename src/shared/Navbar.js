@@ -11,10 +11,9 @@ const Navbar = () => {
   const [user] = useAuthState(auth);
 
   const logout = () => {
-      signOut(auth);
-      localStorage.removeItem('accessToken');
+    signOut(auth);
+    localStorage.removeItem("accessToken");
   };
-
 
   return (
     <nav className="bg-white">
@@ -30,28 +29,37 @@ const Navbar = () => {
             <ion-icon name="search-outline"></ion-icon>
           </div>
         </div>
-        
+
         <div className="md:mr-44">
           {/* <h1 className="text-2xl  text-sky-300">Motion View</h1> */}
-          <Link to='/' className="text-3xl text-sky-500 font-light"> Motion View</Link>
+          <Link to="/" className="text-3xl text-sky-500 font-light">
+            {" "}
+            Motion View
+          </Link>
         </div>
 
         <div className="flex gap-3 text-2xl cursor-pointer">
-          
           {/* <div> */}
-            {/* <ion-icon name="person-outline"> */}
-            <div className='text-black mt-3 text-xl'>{user ? <p className="" onClick={logout} >Sign Out </p> : <Link to="/login" > SignIn </Link>}</div>
-            {/* </ion-icon> */}
+          {/* <ion-icon name="person-outline"> */}
+          <div className="text-black mt-3 text-xl">
+            {user ? (
+              <p className="" onClick={logout}>
+                Sign Out{" "}
+              </p>
+            ) : (
+              <Link to="/login"> SignIn </Link>
+            )}
+          </div>
+          {/* </ion-icon> */}
           {/* </div> */}
 
           <div className="mt-3">
-          <ion-icon name="heart-outline"></ion-icon>
+            <ion-icon name="heart-outline"></ion-icon>
           </div>
 
           <div className="mt-3">
             <ion-icon name="cart-outline"></ion-icon>
           </div>
-
         </div>
       </div>
 
