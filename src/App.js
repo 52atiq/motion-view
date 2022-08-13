@@ -1,10 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-
-import Products from './components/Products/Products';
-
-import BannerSlider from './components/slider/BannerSlider';
-
+import Login from './Auth/Login';
+import Home from './components/Home/Home';
 import Navbar from './shared/Navbar';
 
 
@@ -13,12 +10,11 @@ function App() {
   return (
     <div className="mx-auto">
     <Navbar></Navbar>
-    <BannerSlider></BannerSlider>
    
-    <Products></Products>
 
     <Routes>
-    {/* <Route path='product-is-here-caught-me' element={}></Route> */}
+      <Route path='/' element={<Home></Home>}></Route>
+    <Route path='login' element={<Login></Login>}></Route>
     </Routes>
 
    
