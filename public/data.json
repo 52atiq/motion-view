@@ -1,0 +1,29 @@
+[
+    {
+    "_id": "628bb8e3baec22f042c76dbd",
+    "name": "HAVIT HV-KB327 Multimedia Keyboard",
+    "price": 156,
+    "available": 1000,
+    "image": "https://i.ibb.co/yWBd2yR/keypoard-one.jpg",
+    "description": "Traditional Office USB Wired Keyboard\nErgonomic Waterproof design",
+    "minimumQuantity": 100
+    },
+    {
+    "_id": "628bb8e3baec22f042c76dbe",
+    "name": "IMICE Ak-800 USB RGB Gaming Keyboard",
+    "price": 126,
+    "available": 1000,
+    "image": "https://i.ibb.co/tp4zm1c/keypoard-two.jpg",
+    "description": "Suspension key cover, double waterproof in design\nThree illuminated RGB color gradient",
+    "minimumQuantity": 100
+    },
+    {
+    "_id": "628bb8e3baec22f042c76dbf",
+    "name": "Havit HV-MP838 Gaming Mouse Pad",
+    "price": 164,
+    "available": 1000,
+    "image": "https://i.ibb.co/Yj7z68q/mousepad.jpg",
+    "description": "Comfortable cloth construction\nHighly stylish, Modern design",
+    "minimumQuantity": 100
+    }
+    ]

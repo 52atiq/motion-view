@@ -25,7 +25,7 @@ const Navbar = () => {
 
         <div className="flex gap-3 text-2xl cursor-pointer">
           <div>
-            <ion-icon name="log-in-outline"></ion-icon>
+          <ion-icon name="heart-outline"></ion-icon>
           </div>
           <div>
             <ion-icon name="person-outline"></ion-icon>

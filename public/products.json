@@ -1,0 +1,52 @@
+{
+    "data": [
+    {
+    "id": 201,
+    "name": "Product 4",
+    "image": "https://i.ibb.co/6105B9G/lenovo-laptop.jpg",
+    "regular_price": "15699",
+    "sale_price": "15699",
+    "stock": 200
+    },
+    {
+    "id": 203,
+    "name": "Product 3",
+    "image": "https://i.ibb.co/728zSnL/mouse-two.png",
+    "regular_price": "2790",
+    "sale_price": "2780",
+    "stock": 100
+    },
+    {
+    "id": 204,
+    "name": "Product 2",
+    "image": "https://i.ibb.co/LZB8GLx/mouse-one.jpg",
+    "regular_price": "6690",
+    "sale_price": "6500",
+    "stock": 30
+    },
+    {
+    "id": 198,
+    "name": "Product 6",
+    "image": "https://i.ibb.co/Nj1vWXF/asus-laptop.jpg",
+    "regular_price": "4990",
+    "sale_price": "4980",
+    "stock": 0
+    },
+    {
+    "id": 199,
+    "name": "Product 5",
+    "image": "https://i.ibb.co/yWBd2yR/keypoard-one.jpg",
+    "regular_price": "3950",
+    "sale_price": "3940",
+    "stock": 100
+    },
+    {
+    "id": 206,
+    "name": "Product 1",
+    "image": "https://i.ibb.co/tp4zm1c/keypoard-two.jpg",
+    "regular_price": "13990",
+    "sale_price": "13900",
+    "stock": 20
+    }
+    ]
+    }
