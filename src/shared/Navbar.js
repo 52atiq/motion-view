@@ -1,9 +1,21 @@
+import { signOut } from "firebase/auth";
 import React, { useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
+import auth from "../Firebase/Firebase.init";
 import NavLink from "./NavLinks";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+  const [user] = useAuthState(auth);
+
+  const logout = () => {
+      signOut(auth);
+      localStorage.removeItem('accessToken');
+  };
+
+
   return (
     <nav className="bg-white">
       {/* Top Navbar it only show large screen  */}
@@ -24,16 +36,21 @@ const Navbar = () => {
         </div>
 
         <div className="flex gap-3 text-2xl cursor-pointer">
-          <div>
+          
+          {/* <div> */}
+            {/* <ion-icon name="person-outline"> */}
+            <div className='text-black mt-3 text-xl'>{user ? <p className="" onClick={logout} >SignUp </p> : <Link to="/login" > SignIn </Link>}</div>
+            {/* </ion-icon> */}
+          {/* </div> */}
+
+          <div className="mt-3">
           <ion-icon name="heart-outline"></ion-icon>
           </div>
-          <div>
-            <ion-icon name="person-outline"></ion-icon>
-          </div>
-          <div>
-            {" "}
+
+          <div className="mt-3">
             <ion-icon name="cart-outline"></ion-icon>
           </div>
+
         </div>
       </div>
 
